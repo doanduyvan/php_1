@@ -1,0 +1,183 @@
+.section_gioithieu {
+  background-image: url('./picture/section-header-bg.png');
+
+}
+
+.section_gioithieu>.div_gioithieu {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.section_gioithieu>.div_gioithieu>.div_text {
+  position: absolute;
+  margin-top: 25px;
+}
+
+.section_gioithieu>.div_gioithieu>.div_img {
+  margin: 0 auto;
+
+  width: 447px;
+}
+
+.section_gioithieu>.div_gioithieu>.div_img>img {
+  /* z-index: -5; */
+}
+
+.section_gioithieu>.div_gioithieu>.div_text>h3 {
+  color: white;
+  font-size: 55px;
+}
+
+.section_gioithieu>.div_gioithieu>.div_text>p {
+  color: white;
+  font-size: 20px;
+}
+
+.div_thongdiep {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.thongdiep_left {
+  width: 52%;
+  text-align: center;
+}
+
+.thongdiep_right {
+  width: 48%;
+}
+
+.thongdiep_left>h3 {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.thongdiep_left>p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  padding-bottom: 20px;
+}
+
+.thongdiep_left>a {
+  text-decoration: none;
+  background-color: #3a3a3a;
+  padding: 10px 20px;
+  color: white;
+
+}
+
+.thongdiep_left>a:hover {
+  text-decoration: underline;
+}
+
+section.thongtin {
+  padding-top: 50px;
+  position: relative;
+  
+
+}
+
+section.thongtin::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./picture/tabs-bg.jpg');
+  z-index: -10;
+}
+
+section.thongtin::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./picture/globe-alt.png');
+  background-repeat: no-repeat;
+  z-index: -9;
+  background-position: right;
+}
+
+
+
+.tabs {
+  width: 1300px;
+  height: 451px;
+
+  margin: 0 auto;
+  padding: 10px 20px;
+  overflow: hidden;
+
+}
+
+.tabs>.tab-header {
+  float: left;
+  width: 37%;
+  height: 100%;
+
+
+}
+
+.tabs>.tab-header>div {
+  display: flex;
+  margin-top: 2px;
+  background-color: #828387;
+  cursor: pointer;
+  padding: 0px;
+  font-size: 20px;
+  padding: 12px 0px;
+  padding-left: 25px;
+  color: white;
+
+}
+
+.tabs>.tab-header>div:hover,
+.tabs>.tab-header>div.active {
+  background-color: orangered;
+}
+
+.tabs>.tab-content {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tabs>.tab-content>div {
+  position: absolute;
+  padding-left: 40px;
+  top: -200%;
+}
+
+.tabs>.tab-content>div>h3 {
+  font-size: 35px;
+}
+
+.tabs>.tab-content>div>p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+.tabs>.tab-content>div>a {
+  text-decoration: none;
+  background-color: #3a3a3a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.tabs>.tab-content>div>a:hover {
+  text-decoration: underline;
+}
+
+.tabs>.tab-content>div.active {
+  top: 0px;
+
+}
